@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+body {
+  background-color: rgb(152, 114, 114);
+  padding: 20px auto;
+  margin: 0 20px;
+  max-width: 1200px;
+  font-family: "Manrope";
+}
+a {
+  text-decoration: none;
+  color: cadetblue;
+}
+a:hover {
+  color: bisque;
+}
+.header {
+  display: flex;
+
+  justify-content: space-between;
+  border-bottom: 4px solid rgb(246, 184, 184);
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+.hero {
+  color: rgb(129, 103, 85);
+  font-size: 40px;
+  font-weight: 900;
+}
+form {
+  display: flex;
+  margin: 20px auto;
+  padding: 20px 10px;
+  border-radius: 10px;
+  gap: 20px;
+  background-color: cornsilk;
+  flex-direction: column;
+  width: 400px;
+}
+form input {
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid goldenrod;
+}
+form textarea {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid orangered;
+  padding: 10px 10px;
+  border-radius: 10px;
+  resize: none;
+}
+form button {
+  width: 200px;
+  height: 30px;
+  background-color: rgb(142, 112, 118);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.blogs {
+  border-left: 10px solid crimson;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.blogs:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-color: #f8fafc;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+.blogs:active {
+  box-shadow: none;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+.single {
+  color: black;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+}
+.content .head {
+  width: 700px;
+}
+.content a {
+  color: crimson;
+  cursor: pointer;
+  font-weight: 900;
+}
+.content a:active {
+  opacity: 0.1;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-color: #f8fafc;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms ease-in-out;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 5rem 0;
+}

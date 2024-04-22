@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+
+  <body>
+    <div class="header">
+      <a class="hero" href="/">MIE-TECH</a>
+
+      <%- include('./partials/nav.ejs') %>
+    </div>
+    <form
+      action="/blogs"
+      method="POST"
+      onsubmit="(e)=>{e.preventDefault(); e.target.reset();}"
+    >
+      <label for="title">Blog title :</label>
+      <input type="text" id="title" required name="title" />
+      <label for="snippet"> Blog Snippet :</label>
+      <input type="text" id="snippet" required name="snippet" />
+      <label for="body">Blog body :</label>
+      <textarea id="body" cols="30" rows="10" required name="body"></textarea>
+      <button>submitt</button>
+    </form>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
